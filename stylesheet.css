@@ -93,7 +93,7 @@ h1 {
 	width: 70vw;
 	max-height: 400px;
 	height: 70vw;
-	padding-top: 10px;
+	/* padding-top: 10px; -- Barcode is removed, so padding-top is not necessary */
 	margin-left: auto;
 	margin-right: auto;
 	object-fit: cover;
@@ -144,4 +144,5 @@ h1 {
 	margin-right: auto;
 	object-fit: cover;
 	display: block;
+
 }
