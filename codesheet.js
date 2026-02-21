@@ -133,11 +133,12 @@ function getNavNode(path) {
 	var navNode = document.createElement('div');
 	navNode.className = "nav-grid-item";
 
-	var barcodeNode = document.createElement('img');
-	barcodeNode.alt = path + " in KIX barcode";
-	var barcodeSource = "https://barcode.tec-it.com/barcode.ashx?data=" + cutStringLength(path, 11) + "&code=KIX&unit=Px&imagetype=Svg&bgcolor=e6e6e6&hidehrt=True&modulewidth=3";
-	barcodeNode.src = barcodeSource;
-	navNode.appendChild(barcodeNode);
+	// -- Barcode Generator is broken, SVG file format is only for paid users of the website --
+	// var barcodeNode = document.createElement('img');
+	// barcodeNode.alt = path + " in KIX barcode";
+	// var barcodeSource = "https://barcode.tec-it.com/barcode.ashx?data=" + cutStringLength(path, 11) + "&code=KIX&unit=Px&imagetype=Svg&bgcolor=e6e6e6&hidehrt=True&modulewidth=3";
+	// barcodeNode.src = barcodeSource;
+	// navNode.appendChild(barcodeNode);
 
 	var imgNode = document.createElement('img');
 	imgNode.className = "nav-grid-photo";
@@ -158,3 +159,4 @@ function createNavigation() {
 }
 
 createNavigation();
+
